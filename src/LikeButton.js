@@ -1,9 +1,12 @@
 function LikeButton(props) {
-  return <button onClick={() => updateDB(props.dataID)}>Like</button>;
+
+  return (<div> 
+    <button onClick={() => updateDB(props.dataID)}>Like</button>
+  </div>);
 }
 
 function updateDB(id) {
-    alert(id);
+    console.log(id);
 }
 
 
