@@ -1,6 +1,6 @@
 function LikeButton(props) {
 
-  const [state, setState] = React.useState("state") 
+  const [state, setState] = React.useState("useState") 
 
   return (<div> 
     <p>{state}</p>

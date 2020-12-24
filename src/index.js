@@ -9,3 +9,12 @@ containers.forEach(element => {
   ReactDOM.render( <LikeButton dataID={dataId} />, element );
   
 });
+
+
+/*
+npm run pre-build && npm run build_logic && npm run post_build && npm run exit
+Explanation:
+
+Use && (double ampersand) for sequential execution.
+Use & (single ampersand) for parallel execution.
+*/

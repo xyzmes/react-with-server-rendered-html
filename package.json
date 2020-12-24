@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d lib && parcel build ./lib/index.js --out-dir ./backend-static-dir",
+    "build:watch": "nodemon --watch src --exec \"npm run build\"",
     "babel-v": "babel --version"
   },
   "keywords": [],
@@ -14,7 +15,8 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10"
+    "@babel/preset-react": "^7.12.10",
+    "nodemon": "^2.0.6"
   },
   "dependencies": {}
 }
